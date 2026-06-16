@@ -29,4 +29,4 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          allowed_tools: "Bash(git commit:*),Bash(git push:*),Bash(git add:*),Bash(git checkout:*),Bash(gh pr:*),Bash(gh issue:*)"
+          claude_args: "--allowedTools 'Bash(git commit:*),Bash(git push:*),Bash(git add:*),Bash(git checkout:*),Bash(gh pr:*),Bash(gh issue:*)'"
